@@ -1,0 +1,6 @@
+framework module Pods_Ridey {
+  umbrella header "Pods-Ridey-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -12,9 +12,14 @@
 		C2FF8612200B970C0073DDE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2FF8610200B970C0073DDE4 /* Main.storyboard */; };
 		C2FF8614200B970C0073DDE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2FF8613200B970C0073DDE4 /* Assets.xcassets */; };
 		C2FF8617200B970C0073DDE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2FF8615200B970C0073DDE4 /* LaunchScreen.storyboard */; };
+		C2FF861F200B9A230073DDE4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C2FF861E200B9A230073DDE4 /* GoogleService-Info.plist */; };
+		F82D73F6A440BFF779E51E35 /* Pods_Ridey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E503F9BAC3CFBAEB94ADF7 /* Pods_Ridey.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		238472A097FF8E52D6747D5C /* Pods-Ridey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ridey.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ridey/Pods-Ridey.release.xcconfig"; sourceTree = "<group>"; };
+		48E503F9BAC3CFBAEB94ADF7 /* Pods_Ridey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ridey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A84DF2206EB5D01964F669A0 /* Pods-Ridey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ridey.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ridey/Pods-Ridey.debug.xcconfig"; sourceTree = "<group>"; };
 		C2FF8609200B970C0073DDE4 /* Ridey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ridey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2FF860C200B970C0073DDE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2FF860E200B970C0073DDE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		C2FF8613200B970C0073DDE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2FF8616200B970C0073DDE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2FF8618200B970C0073DDE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2FF861E200B9A230073DDE4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F82D73F6A440BFF779E51E35 /* Pods_Ridey.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		47D9F4A56173CE1116FFE0E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48E503F9BAC3CFBAEB94ADF7 /* Pods_Ridey.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C2FF8600200B970C0073DDE4 = {
 			isa = PBXGroup;
 			children = (
 				C2FF860B200B970C0073DDE4 /* Ridey */,
 				C2FF860A200B970C0073DDE4 /* Products */,
+				EDF8032ACB840C882F5A01F1 /* Pods */,
+				47D9F4A56173CE1116FFE0E2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +77,18 @@
 				C2FF8613200B970C0073DDE4 /* Assets.xcassets */,
 				C2FF8615200B970C0073DDE4 /* LaunchScreen.storyboard */,
 				C2FF8618200B970C0073DDE4 /* Info.plist */,
+				C2FF861E200B9A230073DDE4 /* GoogleService-Info.plist */,
 			);
 			path = Ridey;
+			sourceTree = "<group>";
+		};
+		EDF8032ACB840C882F5A01F1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A84DF2206EB5D01964F669A0 /* Pods-Ridey.debug.xcconfig */,
+				238472A097FF8E52D6747D5C /* Pods-Ridey.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C2FF861B200B970C0073DDE4 /* Build configuration list for PBXNativeTarget "Ridey" */;
 			buildPhases = (
+				0518280658C7DDED62A64619 /* [CP] Check Pods Manifest.lock */,
 				C2FF8605200B970C0073DDE4 /* Sources */,
 				C2FF8606200B970C0073DDE4 /* Frameworks */,
 				C2FF8607200B970C0073DDE4 /* Resources */,
+				90399AFE8BB34E87FE61FF8C /* [CP] Embed Pods Frameworks */,
+				2D7000E5E3FAB13D3FB5DE7B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,12 +154,69 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2FF8617200B970C0073DDE4 /* LaunchScreen.storyboard in Resources */,
+				C2FF861F200B9A230073DDE4 /* GoogleService-Info.plist in Resources */,
 				C2FF8614200B970C0073DDE4 /* Assets.xcassets in Resources */,
 				C2FF8612200B970C0073DDE4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0518280658C7DDED62A64619 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ridey-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D7000E5E3FAB13D3FB5DE7B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ridey/Pods-Ridey-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90399AFE8BB34E87FE61FF8C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Ridey/Pods-Ridey-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ridey/Pods-Ridey-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C2FF8605200B970C0073DDE4 /* Sources */ = {
@@ -272,6 +359,7 @@
 		};
 		C2FF861C200B970C0073DDE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A84DF2206EB5D01964F669A0 /* Pods-Ridey.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +375,7 @@
 		};
 		C2FF861D200B970C0073DDE4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 238472A097FF8E52D6747D5C /* Pods-Ridey.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
