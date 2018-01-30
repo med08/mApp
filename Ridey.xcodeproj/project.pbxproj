@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C2B2F7C32020840E0027F088 /* logInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B2F7C22020840E0027F088 /* logInViewController.swift */; };
+		C2B2F7C520208EE20027F088 /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B2F7C420208EE20027F088 /* signUpViewController.swift */; };
 		C2FF860D200B970C0073DDE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FF860C200B970C0073DDE4 /* AppDelegate.swift */; };
 		C2FF860F200B970C0073DDE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FF860E200B970C0073DDE4 /* ViewController.swift */; };
 		C2FF8612200B970C0073DDE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2FF8610200B970C0073DDE4 /* Main.storyboard */; };
@@ -20,6 +22,8 @@
 		238472A097FF8E52D6747D5C /* Pods-Ridey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ridey.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ridey/Pods-Ridey.release.xcconfig"; sourceTree = "<group>"; };
 		48E503F9BAC3CFBAEB94ADF7 /* Pods_Ridey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ridey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A84DF2206EB5D01964F669A0 /* Pods-Ridey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ridey.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ridey/Pods-Ridey.debug.xcconfig"; sourceTree = "<group>"; };
+		C2B2F7C22020840E0027F088 /* logInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logInViewController.swift; sourceTree = "<group>"; };
+		C2B2F7C420208EE20027F088 /* signUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewController.swift; sourceTree = "<group>"; };
 		C2FF8609200B970C0073DDE4 /* Ridey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ridey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2FF860C200B970C0073DDE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2FF860E200B970C0073DDE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +82,8 @@
 				C2FF8615200B970C0073DDE4 /* LaunchScreen.storyboard */,
 				C2FF8618200B970C0073DDE4 /* Info.plist */,
 				C2FF861E200B9A230073DDE4 /* GoogleService-Info.plist */,
+				C2B2F7C22020840E0027F088 /* logInViewController.swift */,
+				C2B2F7C420208EE20027F088 /* signUpViewController.swift */,
 			);
 			path = Ridey;
 			sourceTree = "<group>";
@@ -203,12 +209,16 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Ridey/Pods-Ridey-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,6 +234,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2FF860F200B970C0073DDE4 /* ViewController.swift in Sources */,
+				C2B2F7C32020840E0027F088 /* logInViewController.swift in Sources */,
+				C2B2F7C520208EE20027F088 /* signUpViewController.swift in Sources */,
 				C2FF860D200B970C0073DDE4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

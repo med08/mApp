@@ -8,5 +8,7 @@ target 'Ridey' do
   # Pods for Ridey
 
 pod 'Firebase/Core'
+pod 'Firebase/Auth'
+pod 'Firebase/Database'
 
 end
